@@ -18,6 +18,8 @@ $mediaMaxWidth : 1000px;
 
 $h1HistoryFontSize: 30px;
 $h1HistoryColor: white;
+$historyItemsPadding: 5px;
+$historyItemPadding: 2px;
 
 textarea {
   height: $boxHeight;
@@ -63,10 +65,10 @@ textarea {
   color: $h1HistoryColor;
 }
 .historyItems {
-  padding: 5px;
+  padding: $historyItemsPadding;
 }
 .item {
-  padding: 2px;
+  padding: $historyItemPadding;
 }
 @media only screen and (max-width: $mediaMaxWidth) {
   .content {
