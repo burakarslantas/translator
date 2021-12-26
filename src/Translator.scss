@@ -1,0 +1,84 @@
+$boxHeight: 200px;
+$boxWidth: 40%;
+$textAreaFontSize: 30px;
+
+$h1FontSize: 50px;
+$h1Color: #4040f1;
+
+$headerMargin: 10%;
+
+$btnWidth: 80px;
+$btnHeight: 40px;
+$btnBorderRad: 4px;
+$btnMargin: 5px 0;
+
+$btnGroupMargin: 10px;
+
+$mediaMaxWidth : 1000px;
+
+$h1HistoryFontSize: 30px;
+$h1HistoryColor: white;
+
+textarea {
+  height: $boxHeight;
+  width: $boxWidth;
+  font-size: $textAreaFontSize;
+}
+.App h1 {
+  font-family: Cursive;
+  font-size: $h1FontSize;
+  color: $h1Color;
+}
+
+.App-header{
+  text-align: center;
+}
+
+.App-body{
+  margin-top: $headerMargin;
+}
+
+.content{
+  display: flex;
+  justify-content: center;
+}
+
+.btn{
+  width:$btnWidth;
+  height:$btnHeight;
+  border-radius: $btnBorderRad;
+  margin: $btnMargin;
+}
+.btnGroup{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin:$btnGroupMargin;
+}
+.mic{
+  font-size: $btnHeight;
+}
+.history h1{
+  font-size: $h1HistoryFontSize;
+  color: $h1HistoryColor;
+}
+.historyItems {
+  padding: 5px;
+}
+.item {
+  padding: 2px;
+}
+@media only screen and (max-width: $mediaMaxWidth) {
+  .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .btnGroup {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: $btnGroupMargin
+  }
+}
